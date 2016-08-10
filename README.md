@@ -6,3 +6,4 @@ More info how it works can be found on my blog www.mmquant.com/liquidity-lending
 
 Contents:
 SizeCorrectionwget.sh - Download script to get tick data .csv with correct size
+threshold_calc - Calculate volume threshold
