@@ -16,8 +16,8 @@ How to use?
 4. Set path in SizeCorrectionwget.sh .  
 5. Set paths in threshold_calc.m . see %% I/O section.  
 6. Set paths in lending_script.m . see %% I/O section.  
-7. Add cron entries (don't forget to change path to your SizeCorrectionwget.sh).
-   *  For debugging purposes you can comment out output to /dev/null 2>&1 .  
+7. Add cron entries (don't forget to change path to your SizeCorrectionwget.sh).  
+   For debugging purposes you can comment out output to /dev/null 2>&1 .  
 
     */11    *       *       *       *       /usr/local/bin/matlab -nodesktop -nosplash -r lending_script > /dev/null 2>&1
     5       0       *       *       *       /usr/local/bin/matlab -nodesktop -nosplash -r threshold_calc > /dev/null 2>&1 
