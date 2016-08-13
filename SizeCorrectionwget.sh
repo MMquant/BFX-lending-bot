@@ -6,8 +6,8 @@
 # Set dlpath before use.
 
 dlsize=0
-dlpath=your/custom/path/lastSwaps.csv
-logpath=your/custom/path/wget.log
+dlpath=your/custom/path/lastSwaps.csv # SET BEFORE USE
+logpath=your/custom/path/wget.log # SET BEFORE USE
 truesize=$(curl -sI https://bfxdata.com/csv/lastSwapsUSD.csv | grep -i content-length | awk '{print $2}' | tr -d '\r')
 
 while [[ $dlsize != $truesize ]]; do
