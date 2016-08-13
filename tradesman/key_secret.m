@@ -14,12 +14,12 @@ BITSTAMP_KEY = '';
 BITSTAMP_SECRET = '';
 BITSTAMP_USERNAME=''; %this is empty no need for username
 % % % % % % % % % % % % BITFINEX
-BITFINEX_KEY = 'J9WABlnr6YwAEWSSD7LyyKvgUvPKLULNq3xZeS4qVXC';
-BITFINEX_SECRET = 'updUDdcAf7A1yDRl5O5Z4NpeCTojwz0FKDKzRmUpG9f';
+BITFINEX_KEY = '';
+BITFINEX_SECRET = '';
 BITFINEX_USERNAME=''; %this is empty no need for username
 % % % % % % % % % % % % KRAKEN
-KRAKEN_KEY = 'wTw8Se2e4U7pe8wg2YpWKFRsZc7t9VDGPjxrywmDUc1ljQ4WzGA4MS67';
-KRAKEN_SECRET = 'IkYDJzO6uIvNpsvyQTyVq4M34b+36J/YS2nuaAhHv1RcqUecSoF8/jrUDVEzbNikGnwqReiwfoonwNnEg4bizw==';
+KRAKEN_KEY = '';
+KRAKEN_SECRET = '';
 KRAKEN_USERNAME=''; %this is empty no need for username
 % % % % % % % % % % % % HUOBI no need atm. will be updated
 HUOBI_KEY = '';
