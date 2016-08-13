@@ -12,7 +12,7 @@ truesize=$(curl -sI https://bfxdata.com/csv/lastSwapsUSD.csv | grep -i content-l
 while [[ $dlsize != $truesize ]]; do
 /usr/bin/wget -t 0 https://bfxdata.com/csv/lastSwapsUSD.csv --random-wait -O $dlpath -a /home/maple/Documents/MATLAB/logs/wget.log
 dlsize=$(stat -c%s "$dlpath")
-truesize=$(curl -sI https://bfxdata.com/csv/lastSwapsUSD.csv | grep -i content-length | awk '{print $2}' | tr -d '\r')
+# truesize=$(curl -sI https://bfxdata.com/csv/lastSwapsUSD.csv | grep -i content-length | awk '{print $2}' | tr -d '\r')
 # echo "dlsize="$dlsize
 # echo "truesize="$dlsize
 done
