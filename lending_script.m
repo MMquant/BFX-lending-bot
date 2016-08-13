@@ -1,7 +1,22 @@
 %% Bitfinex swaps lending script
-% written by Petr Javorik
-
-% Description:
+%
+% Copyright (C) 2015  Petr Javorik  maple@mmquant.net
+%
+%       This program is free software: you can redistribute it and/or modify
+%       it under the terms of the GNU General Public License as published by
+%       the Free Software Foundation, either version 3 of the License, or
+%       any later version.
+%
+%       This program is distributed in the hope that it will be useful,
+%       but WITHOUT ANY WARRANTY; without even the implied warranty of
+%       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%       GNU General Public License for more details.
+%
+%       You should have received a copy of the GNU General Public License
+%       along with this program. If not, see <http://www.gnu.org/licenses/>.
+%
+%
+%% Description:
 % This script autolends unused funds in Bitfinex deposit wallet.
 % Script is meant to be executed regularly according to the user needs.
 % You can use cron scheduling tool.
@@ -45,7 +60,7 @@ if length(offers_ids) > 2
         [response,status] = main_api_call('bitfinex','cancel_offer',{offers_ids_mat(row)});
     end
 end
-
+% Balances
 [balances,bal_status] = main_api_call('bitfinex','balances',{});
 if bal_status.isGood ~=1
     disp('Balances retrieval error, check internet connection.')

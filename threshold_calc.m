@@ -1,8 +1,24 @@
-%% threshold_calc.m
-% Script for volume threshold calculation
-% 
-% Written by Petr Javorik
-
+%% Volume threshold calculation
+%
+% Copyright (C) 2015  Petr Javorik  maple@mmquant.net
+%
+%       This program is free software: you can redistribute it and/or modify
+%       it under the terms of the GNU General Public License as published by
+%       the Free Software Foundation, either version 3 of the License, or
+%       any later version.
+%
+%       This program is distributed in the hope that it will be useful,
+%       but WITHOUT ANY WARRANTY; without even the implied warranty of
+%       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%       GNU General Public License for more details.
+%
+%       You should have received a copy of the GNU General Public License
+%       along with this program. If not, see <http://www.gnu.org/licenses/>.
+%
+%
+%% Description
+% This script is part of my lending bot. For further information how to use it
+% visit my blog <https://mmquant.net/liquidity-lending-bfx>
 %% I/O 
 input = 'path/to/your/lastSwapsUSD.csv'; % SET BEFORE USE !
 output = 'path/to/your/threshold.mat'; % SET BEFORE USE !
