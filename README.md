@@ -19,6 +19,6 @@ How to use?
 7. Add cron entries (don't forget to change path to your SizeCorrectionwget.sh).  
    For debugging purposes you can comment out output to /dev/null 2>&1 .  
 
-    */11    *       *       *       *       /usr/local/bin/matlab -nodesktop -nosplash -r lending_script > /dev/null 2>&1
-    5       0       *       *       *       /usr/local/bin/matlab -nodesktop -nosplash -r threshold_calc > /dev/null 2>&1 
-    55      23      *       *       *       /home/maple/Documents/MATLAB/scripts/SizeCorrectionwget.sh
+    */11    *       *       *       *       /usr/local/bin/matlab -nodesktop -nosplash -r lending_script > /dev/null 2>&1  
+    5       0       *       *       *       /usr/local/bin/matlab -nodesktop -nosplash -r threshold_calc > /dev/null 2>&1  
+    55      23      *       *       *       /home/maple/Documents/MATLAB/scripts/SizeCorrectionwget.sh  
